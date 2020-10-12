@@ -58,6 +58,6 @@ prod_report2 %>%
   group_by(month) %>%
   count(Gender) %>%
   ggplot(aes( month, n, color=Gender)) +
-  scale_y_log10() +
+  scale_x_log10() +
   geom_point()
 
